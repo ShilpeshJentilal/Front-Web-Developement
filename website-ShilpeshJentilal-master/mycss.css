@@ -1,0 +1,2045 @@
+body {
+    background-color: black;
+    margin: 0px;
+}
+
+
+
+
+/*=====This code is for all pages navigation bar style=====*/
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+
+
+header h1 {
+    font-size: 50px;
+    font-family: "Bodoni MT";
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.txtlogo2 {
+    color: orangered;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+
+nav ul li a:after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: orangered;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+.rightcontainer ul li {
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.rightcontainer ul li a {
+    color: orangered;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+
+.rightcontainer ul li a:after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: orangered;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+}
+
+
+/*=======================================================*/
+
+/*========================Home Page=========================================*/
+/*==========================================================================*/
+
+.introduction {
+    text-align: center;
+    color: #fff;
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: left;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container {
+    justify-content: center;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+
+
+
+.container h2 {
+    font-size: 25px;
+}
+
+.mypicture {
+    margin-top: 70px;
+    display: block;
+    object-fit: cover;
+    height: auto;
+    width: 70%;
+
+}
+
+.contact-icons {
+    flex-wrap: wrap;
+
+}
+
+/*right Container*/
+.rightcontainer {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.rightcontainer h2 {
+    color: orangered;
+}
+
+.rightcontainer p {
+    color: grey;
+
+}
+
+.rightcontainer ul {
+    padding: 0;
+}
+
+
+
+/*left Container*/
+
+
+
+.leftcontainer h2 {
+    color: orangered;
+}
+
+.leftcontainer .txthi {
+    color: white;
+}
+
+.contact-icons {
+    display: flex;
+    flex-direction: row;
+    font-size: larger;
+    margin-top: 10px;
+    justify-content: center;
+    gap: 1em;
+}
+
+.contact-icons a {
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 30px;
+    color: orangered;
+}
+
+
+
+hr {
+    color: white;
+    width: 90%;
+}
+
+footer {
+    background-color: orangered;
+    margin-bottom: 0px;
+}
+
+footer p {
+    color: white;
+    margin: 0px;
+    margin-left: 80px;
+}
+
+/*============buttonstyle=======================*/
+
+.btn {
+    margin-top: 25px;
+    position: sticky;
+    width: 160px;
+    height: 50px;
+    border: 2px solid orangered;
+    border-radius: 10px;
+    background-color: orangered;
+    z-index: 1;
+    color: white;
+}
+
+.btn a {
+    color: white;
+}
+
+
+.btncircle {
+    position: absolute;
+    width: 35px;
+    height: 43px;
+    background-color: white;
+    border-radius: 10px;
+    left: 0.5px;
+    top: 1.5px;
+    z-index: 2;
+    opacity: 0.5;
+    transition: .5s cubic-bezier(1, 0, .8, 1);
+}
+
+.btn:hover .btncircle {
+    width: 154px;
+}
+
+.btnarrow {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    transform: rotate(45deg);
+    top: 10px;
+    left: 1px;
+    transition: .5s;
+}
+
+.btn:hover .btnarrow {
+    left: 15px;
+}
+
+.btnarrow:before {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 2px;
+    background-color: #000;
+    transform: rotate(-45deg);
+    left: -9px;
+    top: 10px;
+    opacity: 0;
+    transition: .5s;
+
+}
+
+.btn:hover .btnarrow.btnarrow:before {
+    opacity: 1;
+}
+
+.btntext {
+    position: absolute;
+    left: 60px;
+    top: 0px;
+    line-height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    z-index: 3;
+    transition: .5s;
+}
+
+
+.btn.btn:hover .btntext {
+    color: #000;
+
+}
+
+.descriptiontitle {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+
+/*============buttonstyle=======================*/
+
+
+/*===========================About me Page==================================*/
+/*==========================================================================*/
+
+.container_aboutme {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+.about_header {
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+.about_header h2 {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
+    color: grey;
+    opacity: 0.3;
+
+}
+
+.about_header span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+    font-size: 30px;
+    color: orangered;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.about_text {
+    font-size: 20px;
+    line-height: 1.5em;
+    color: grey;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: left;
+
+}
+
+.about_info ul {
+    display: block;
+    text-align: center;
+    color: white;
+}
+
+.about_info ul li {
+    display: flex;
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.about_info ul li span {
+    display: block;
+    color: orangered;
+}
+
+.btn_cv {
+    color: orangered;
+    font-size: 23px;
+    background-color: #000;
+    border: 2px solid orangered;
+    border-radius: 30px;
+    text-align: left;
+    margin-bottom: 20px;
+    text-decoration: none;
+    padding:0px 15px;
+}
+
+.btn_cv:hover {
+    background-color: orangered;
+    color: black;
+
+}
+
+
+.skill_header {
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+
+}
+
+
+.skill_header h2 {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
+    color: grey;
+    opacity: 0.3;
+
+}
+
+.skill_header {
+    margin: auto;
+    width: fit-content;
+}
+
+.skill_header span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+    font-size: 30px;
+    color: orangered;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.container_skills {
+    display: flex;
+    color: white;
+    margin: 50px;
+    flex-direction: row;
+    gap: 20%;
+    justify-content: center;
+    margin-top: 0px;
+    text-align: center;
+}
+
+
+.container_skills .icon-circle {
+    width: fit-content;
+    height: fit-content;
+    background: white;
+    margin: auto;
+    padding: 10px;
+    border-radius: 50%;
+
+}
+
+.container_skills div .icon-circle a {
+    text-align: center;
+    border-radius: 100px;
+    font-size: 50px;
+    color: orangered;
+    text-decoration: none;
+
+}
+
+.container_skills div h1 {
+    color: orangered;
+}
+
+.container_skills div h1,
+p {
+    text-align: center;
+}
+
+
+.skillsbar-container {
+    color: wheat;
+    width: auto;
+    margin: auto;
+    margin-bottom: 50px;
+    min-width: 300px;
+    max-width: 1300px;
+
+}
+
+.skillsbar-container .bar-margin {
+    background-color: rgb(85, 73, 73);
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+.myproject-container {
+    text-align: center;
+}
+
+.myproject_header {
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+.myproject_header h2 {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
+    color: grey;
+    opacity: 0.3;
+
+}
+
+.myproject_header span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+    font-size: 30px;
+    color: orangered;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/* testing the my project card code */
+
+.project-card-container {
+    position: relative;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: 200px;
+    width: auto;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 50px;
+
+}
+
+.name-project {
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    border-radius: 20px;
+
+
+}
+
+.name-project img {
+    border-radius: 20px;
+}
+
+.project-text {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.name-project:hover {
+    background-color: orangered;
+}
+
+.name-project:hover img {
+    filter: contrast(0);
+}
+
+.project-text {
+    opacity: 0;
+    display: none;
+
+}
+
+.project-text h1 {
+    margin: 0px;
+}
+
+.project-text span {
+    font-size: 30px;
+    font-style: italic;
+
+}
+
+.name-project:hover .project-text {
+    opacity: 1;
+    display: block;
+    font-size: medium;
+    color: orangered;
+
+}
+
+.project-title {
+    color: white;
+}
+
+/*==========================================================================*/
+/*==========================================================================*/
+/*===========================Resume Page==================================*/
+/*==========================================================================*/
+
+.resume_header {
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+.resume_header h2 {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
+    color: grey;
+    opacity: 0.3;
+    text-align: center;
+
+}
+
+.resume_header span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+    font-size: 30px;
+    color: orangered;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.container_resume {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.container_resume2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px
+}
+
+.mypicture_resume {
+    width: 65%;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.resumedescription {
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+.resumedescription2 {
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+.profiletitle {
+    font-size: 38px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-bottom: 50px solid orangered;
+    border-right: 60px solid transparent;
+    height: 0;
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.skillstitle {
+    font-size: 38px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-bottom: 50px solid orangered;
+    border-right: 60px solid transparent;
+    height: 0;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.educationtitle {
+    font-size: 38px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-bottom: 50px solid orangered;
+    border-right: 60px solid transparent;
+    height: 0;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.experiencetitle {
+    font-size: 38px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-bottom: 50px solid orangered;
+    border-right: 60px solid transparent;
+    height: 0;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 22px;
+    color: rgb(255, 255, 255);
+}
+
+.activitytitle {
+    font-size: 38px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-bottom: 50px solid orangered;
+    border-right: 60px solid transparent;
+    height: 0;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.referencestitle {
+    font-size: 38px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-bottom: 50px solid orangered;
+    border-right: 60px solid transparent;
+    height: 0;
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 22px;
+    color: rgb(255, 255, 255);
+}
+
+.description {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+}
+
+.skillsdescription {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+}
+
+.educationdescription {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 15px;
+    padding-right: 20px;
+
+
+}
+
+.referencesdescription {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 15px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.educationdescription1 {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.educationdescription2 {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.experiencedescription {
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+.experiencedescription1 {
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.experiencedescription2 {
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.activitydescription {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.educationhead {
+    color: orangered;
+    font-weight: bold;
+}
+
+.skillsgrid {
+    color: orangered;
+    font-weight: bold;
+}
+
+.experiencehead {
+    color: orangered;
+    font-weight: bold;
+}
+
+.transport {
+    color: orangered;
+    font-weight: bold;
+}
+
+.sports {
+    color: orangered;
+    font-weight: bold;
+}
+
+.music {
+    color: orangered;
+    font-weight: bold;
+}
+
+.language {
+    color: orangered;
+    font-weight: bold;
+}
+
+
+
+.gradescontainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: auto;
+    gap: 10px;
+    background-color: black;
+    padding: 25px;
+    width: 94%;
+}
+
+.gradescontainer>div {
+    background-color: black;
+    border: 1px solid black;
+    text-align: left;
+
+}
+
+
+
+.gradeshead {
+    color: orangered;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+
+.gridcontainerskills {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    column-gap: 40px;
+    grid-template-columns: auto;
+}
+
+.gridcontainerskills2 {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    column-gap: 40px;
+    grid-template-columns: auto;
+}
+
+.gridcontainerskills3 {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    column-gap: 40px;
+    grid-template-columns: auto;
+}
+
+.gridcontainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    color: #fff;
+    text-align: center;
+    grid-template-columns: auto;
+}
+
+.gradescontainer div {
+    color: white;
+}
+
+.gradescontainer .gradeshead {
+    color: orangered;
+}
+
+
+
+
+
+
+
+
+/*===========================Contact me Page==================================*/
+/*==========================================================================*/
+
+.container_contactme {
+    display: grid;
+    margin-left: 80px;
+    margin-right: 80px;
+    justify-content: center;
+    margin-bottom: 111px;
+    grid-auto-flow: row dense;
+
+
+}
+
+
+.contact_header {
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+.contact_header h2 {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
+    color: grey;
+    opacity: 0.3;
+
+}
+
+.contact_header span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+    font-size: 30px;
+    color: orangered;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.contact_info {
+    text-align: center;
+    color: white;
+}
+
+
+
+.contact_info div {
+    border-bottom: 2px solid orangered;
+    position: relative;
+    padding: 20px 0;
+    z-index: 1;
+    border-right: 2px solid orangered;
+    border-left: 2px solid orangered;
+}
+
+.contact_info .email {
+    border-top: 2px solid orangered;
+
+}
+
+.contact_info div:hover {
+    background-color: grey;
+}
+
+.contact_info .social_links {
+    border: 0px solid orangered;
+}
+
+
+.contact_info div i {
+    position: absolute;
+    margin-top: 30px;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 50px;
+    color: orangered;
+    padding-right: 10px;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.contact_info div a {
+    color: orangered;
+    opacity: 1;
+}
+
+.contact_info h5 {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+
+
+.contact_info .social_links a {
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 50px;
+    text-decoration: none;
+    color: orangered;
+    border-radius: 10px;
+}
+
+.contact_info .social_links a i {
+    position: static;
+    left: 0px;
+    font-size: 40px;
+    opacity: 1;
+
+}
+
+.container_contactme form {
+    display: grid;
+    margin-bottom: 60px;
+
+}
+
+.container_contactme form input {
+    font-size: larger;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 2px solid orangered;
+    padding: 10px 0;
+    background-color: #222;
+    text-align: center;
+    color: white;
+}
+
+.container_contactme form .message {
+    height: 200px;
+}
+
+.container_contactme form button {
+    border: 2px solid orangered;
+    width: 140px;
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+
+.container_contactme form button:hover {
+    border: 2px solid orangered;
+    width: 140px;
+    height: 50px;
+    background-color: orangered;
+    color: white;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+.container_contactme p {
+    color: wheat;
+    text-align: center;
+}
+
+#dialog-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 2px solid orangered;
+    padding: 20px;
+    z-index: 1;
+    width: auto;
+    color: black;
+    border-radius: 20px;
+    display: none;
+
+}
+
+#dialog-box #close-button {
+    color: black;
+    font-size: 60px;
+}
+
+#dialog-box p {
+    font-size: 30px;
+    color: green;
+    margin-right: 100px;
+    margin-left: 100px;
+
+}
+
+#close-button .sp {
+    position: fixed;
+    cursor: pointer;
+}
+
+
+.blur {
+    filter: blur(5px);
+    pointer-events: none;
+}
+
+
+#dialog-box #close-button:hover {
+    color: red;
+}
+
+.email-p {
+    color: orangered;
+}
+
+/*==========================================================================*/
+/*==========================================================================*/
+
+
+/*=================================Media Query=================================*/
+/*======================================================================================*/
+@media screen and (min-width: 1090px) {
+
+
+    /*==============Home============*/
+    header {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    .leftcontainer {
+        margin-top: 0px;
+
+    }
+
+    .btn_cv{
+        margin-left: 40px;
+    }
+
+    .rightcontainer {
+        margin-top: 0px;
+    }
+
+
+    .contact-icons {
+        display: flex;
+        font-size: larger;
+        margin-top: 15px;
+    }
+
+    .contact-icons a {
+        margin-top: 0px;
+    }
+
+    /*==========================*/
+
+    /*==============About Me============*/
+    .container_aboutme {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 100px;
+        margin-right: 100px;
+        text-align: left;
+    }
+
+
+
+    .image_container img {
+        width: 350px;
+        margin-bottom: 0;
+    }
+
+
+    .text_container {
+        flex-basis: 50%;
+    }
+
+    .about_header {
+        margin-bottom: 0;
+        text-align: left;
+        margin-left: 50px;
+        width: fit-content;
+    }
+
+    .about_text {
+        min-width: 0;
+        max-width: 700px;
+    }
+
+
+    .about_info {
+        margin-top: 1em;
+
+    }
+
+    .about_info ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    .about_info ul li {
+        display: flex;
+        flex-direction: row;
+        flex-basis: 100%;
+    }
+
+    .text_container button {
+        margin-left: 50px;
+    }
+
+    /*==========slider================*/
+
+
+    /*==========================*/
+
+
+    /*==============Contact Me============*/
+    .contacts {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .contact_info {
+        margin-right: 50px;
+    }
+
+    .contact_form {
+        width: 480px;
+    }
+
+    .contact_info div {
+        width: 400px;
+    }
+
+    .contact_header {
+        text-align: center;
+    }
+
+    /*==========================*/
+}
+
+
+@media only screen and (min-width: 1148px) {
+
+    /*==============Home============*/
+
+    section .introduction {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+
+    }
+
+    .container {
+        flex-direction: row;
+        text-align: left;
+        margin-top: 140px;
+    }
+
+    .introduction {
+        flex-direction: row;
+        font-size: 85%;
+        flex-wrap: wrap;
+
+    }
+
+    .btn {
+        margin-top: 50px;
+    }
+
+    .mypicture {
+        margin-top: 0px;
+        margin-left: 150px;
+        width: 50%;
+
+    }
+
+    .leftcontainer {
+        text-align: left;
+        margin-top: 180px;
+        justify-items: flex-start;
+        margin-left: 80px;
+    }
+
+    .rightcontainer {
+        text-align: left;
+        margin-right: 80px;
+        margin-left: 80px;
+    }
+
+    .rightcontainer p {
+        text-align: left;
+    }
+
+    main {
+        margin-bottom: 15px;
+    }
+
+    /*==========================*/
+
+    /*==========About me Query================*/
+
+    .about_info ul li {
+        flex-basis: calc(50% - 70px);
+    }
+
+
+    .image_container img {
+        width: 370px;
+        margin-bottom: 0;
+        margin-left: 100px;
+    }
+
+    /*==========================*/
+    /*==============Contact Me============*/
+
+    /*==========================*/
+
+
+}
+
+@media only screen and (min-width: 1600px) {
+
+    /*==============Home============*/
+
+    .container {
+        font-size: x-large;
+        margin-top: 0px;
+    }
+
+
+    .introduction {
+        font-size: 85%;
+        flex-wrap: nowrap;
+
+    }
+
+    .leftcontainer {
+        margin-top: 80px;
+        margin-left: 80px;
+        margin-right: 80px;
+
+    }
+
+
+    hr {
+        width: 0%;
+        visibility: hidden;
+    }
+
+    .line_aboutme {
+        width: 80%;
+        visibility: visible;
+    }
+
+    .mypicture {
+        height: 720px;
+        width: auto;
+        margin-left: 0px;
+    }
+
+    /*==========================*/
+
+
+    /*==============About Me============*/
+    .image_container img {
+        margin-top: 50px;
+        width: 470px;
+        margin-bottom: 0;
+        margin-left: 100px;
+    }
+
+    /*==========================*/
+    /*==============Contact Me============*/
+
+    .contacts {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
+
+    .contact_form {
+        width: 600px;
+    }
+
+    .contact_info div {
+        width: 500px;
+    }
+
+    .contact_header {
+        text-align: center;
+    }
+}
+
+
+
+@media only screen and (max-width: 570px) {
+
+
+    /*=========Contact me==============*/
+
+    .contact_header {
+        text-align: center;
+    }
+
+    .contact_header h2 {
+        font-size: 30px;
+    }
+
+    .contact_header span {
+        font-size: 15px;
+
+    }
+
+
+    .contact_info .email h5,
+    .phone h5 {
+        margin-top: 20px;
+    }
+
+
+    /*=================================*/
+
+
+    /*=========About me==============*/
+
+    .image_container img {
+        width: 250px;
+        margin-bottom: 0;
+    }
+
+
+    .about_header h2 {
+        font-size: 50px;
+    }
+
+    .about_header span {
+        font-size: 25px;
+    }
+
+
+
+    .skill_header h2 {
+        font-size: 50px;
+    }
+
+
+    .skill_header span {
+        font-size: 25px;
+    }
+
+
+
+
+
+
+
+    /*=================================*/
+
+
+}
+
+@media only screen and (max-width: 660px) {
+
+    .container_skills {
+        flex-direction: column;
+    }
+
+
+    .container_skills .sep .card-skill {
+        margin-bottom: 50px;
+    }
+
+}
+
+
+
+/* ===================Resume Media Query=============== */
+/* ==================================================== */
+
+
+
+@media screen and (min-width: 600px) {
+    .mypicture_resume {
+        width: 45%;
+        margin: auto;
+        border-radius: 50%;
+        height: 400px;
+    }
+
+    .resumedescription {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .description {
+        color: white;
+        text-align: left;
+        font-size: 16px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .skillsdescription {
+        color: white;
+        text-align: center;
+        font-size: 16px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+    }
+
+    .experiencedescription1 {
+        color: white;
+        text-align: center;
+        font-size: 17px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .experiencedescription2 {
+        color: white;
+        text-align: center;
+        font-size: 17px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+    }
+
+
+    .gradescontainer {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: auto;
+        gap: 10px;
+        background-color: black;
+        padding: 25px;
+        width: 60%;
+    }
+
+    .gridcontainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        grid-template-columns: auto;
+    }
+
+
+}
+
+@media screen and (min-width: 1000px) {
+    .description {
+        color: white;
+        text-align: center;
+        font-size: 16px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        padding-right: 80px;
+        padding-left: 80px;
+
+    }
+
+    .skillsdescription {
+        color: white;
+        text-align: center;
+        font-size: 16px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-bottom: 20px;
+
+    }
+
+    .experiencedescription1 {
+        color: white;
+        text-align: center;
+        font-size: 17px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .experiencedescription2 {
+        color: white;
+        text-align: center;
+        font-size: 17px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-bottom: 20px;
+    }
+
+    .gridcontainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        grid-template-columns: auto;
+    }
+
+
+}
+
+@media screen and (min-width: 1370px) {
+    .container_resume {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin-top: 50px;
+    }
+
+    .container_resume2 {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin-top: 80px;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .mypicture_resume {
+        width: 35%;
+        margin-left: 140px;
+        border-radius: 50%;
+    }
+
+    .resumedescription {
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-left: 25px;
+        padding-right: 25px;
+
+    }
+
+    .resumedescription2 {
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-left: 25px;
+        padding-right: 25px;
+
+    }
+
+    .profiletitle {
+        font-size: 38px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        border-bottom: 50px solid orangered;
+        border-right: 60px solid transparent;
+        height: 0;
+        width: 60%;
+        margin-top: 5px;
+        margin-left: 10px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: rgb(255, 255, 255);
+    }
+
+    .skillstitle {
+        font-size: 38px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
+        border-bottom: 50px solid orangered;
+        border-right: 60px solid transparent;
+        height: 0;
+        width: 60%;
+        margin-top: 5px;
+        margin-left: 10px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: rgb(255, 255, 255);
+    }
+
+    .educationtitle {
+        font-size: 38px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
+        border-bottom: 50px solid orangered;
+        border-right: 60px solid transparent;
+        height: 0;
+        width: 60%;
+        margin-top: 5px;
+        margin-left: 10px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: rgb(255, 255, 255);
+    }
+
+    .experiencetitle {
+        font-size: 38px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
+        border-bottom: 50px solid orangered;
+        border-right: 60px solid transparent;
+        height: 0;
+        width: 60%;
+        margin-top: 5px;
+        margin-left: 10px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: rgb(255, 255, 255);
+    }
+
+    .activitytitle {
+        font-size: 38px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
+        border-bottom: 50px solid orangered;
+        border-right: 60px solid transparent;
+        height: 0;
+        width: 60%;
+        margin-top: 5px;
+        margin-left: 10px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: rgb(255, 255, 255);
+    }
+
+    .referencestitle {
+        font-size: 38px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
+        border-bottom: 50px solid orangered;
+        border-right: 60px solid transparent;
+        height: 0;
+        width: 60%;
+        margin-top: 5px;
+        margin-left: 10px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: rgb(255, 255, 255);
+    }
+
+
+    .description {
+        color: white;
+        text-align: left;
+        font-size: 17px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding-left: 15px;
+        padding-right: 100px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+
+    .skillsdescription {
+        color: white;
+        text-align: left;
+        font-size: 17px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding-left: 15px;
+        padding-right: 100px;
+        padding-bottom: 20px;
+
+    }
+
+    .educationdescription {
+        color: white;
+        text-align: left;
+        font-size: 17px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding-left: 15px;
+        padding-right: 100px;
+
+
+    }
+
+    .educationdescription1 {
+        color: white;
+        text-align: left;
+        font-size: 17px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding-left: 40px;
+        padding-right: 80px;
+
+    }
+
+    .educationdescription2 {
+        color: white;
+        text-align: left;
+        font-size: 17px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding-left: 40px;
+        padding-right: 80px;
+        padding-bottom: 20px;
+    }
+
+    .experiencedescription {
+        color: white;
+        text-align: left;
+        font-size: 17px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+        padding-left: 15px;
+        padding-right: 100px;
+    }
+
+    .experiencedescription1 {
+        color: white;
+        text-align: left;
+        font-size: 17px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding-left: 40px;
+        padding-right: 80px;
+    }
+
+    .experiencedescription2 {
+        color: white;
+        text-align: left;
+        font-size: 17px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding-left: 40px;
+        padding-right: 80px;
+        padding-bottom: 20px;
+    }
+
+
+    .activitydescription {
+        color: white;
+        text-align: left;
+        padding-left: 15px;
+        font-size: 17px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+    }
+
+    .referencesdescription {
+        color: white;
+        text-align: left;
+        font-size: 17px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding-left: 15px;
+        padding-right: 100px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+
+    .experiencehead {
+        color: orangered;
+        font-weight: bold;
+    }
+
+    .educationhead {
+        color: orangered;
+        font-weight: bold;
+    }
+
+    .skillsgrid {
+        color: orangered;
+        font-weight: bold;
+    }
+
+    .transport {
+        color: orangered;
+        font-weight: bold;
+    }
+
+    .sports {
+        color: orangered;
+        font-weight: bold;
+    }
+
+    .music {
+        color: orangered;
+        font-weight: bold;
+    }
+
+    .language {
+        color: orangered;
+        font-weight: bold;
+    }
+
+    .gradescontainer {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        margin-left: 2px;
+        background-color: black;
+        padding: 25px;
+        width: 60%;
+    }
+
+    .gradescontainer>div {
+        background-color: black;
+        border: 1px solid black;
+        text-align: left;
+
+    }
+
+
+
+    .gradeshead {
+        color: orangered;
+        font-family: arial;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+
+    .gridcontainer {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+        flex-direction: row;
+        padding-left: 16px;
+        width: 60%;
+        color: white;
+        text-align: left;
+        font-size: 17px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+
+
+
+
+
+
+}
